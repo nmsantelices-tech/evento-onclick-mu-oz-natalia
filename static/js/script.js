@@ -6,13 +6,13 @@ function eliminarBoton() {
     boton.remove();
 }
 
-            // Función para mostrar un mensaje
-            function mostrarMensaje() {
-                // Declarar una variable con el mensaje a mostrar
-                const mensaje = "Este es un mensaje personalizado!";
-                // Mostrar el mensaje en una alerta
-                alert(mensaje);
-            }
+// Función para mostrar un mensaje
+function mostrarMensaje() {
+    // Declarar una variable con el mensaje a mostrar
+    const mensaje = "Este es un mensaje personalizado!";
+    // Mostrar el mensaje en una alerta
+    alert(mensaje);
+}
 
 // Función para cambiar el texto de un botón
 function cambiarTexto() {
@@ -34,5 +34,14 @@ function darMeGusta(event) {
     let nuevoValor = valorNumero + 1;
     // Reasignamos el nuevo valor a la etiqueta "span" para que se actualice en la página
     etiquetaSpan.textContent = nuevoValor;
+    // Para enviar mostrar mensaje por cada tarjeta : 
+    // Buscamos la tarjeta
+    let tarjeta = boton.closest(".tarjeta");
+    //buscamos el titulo que identifica la tarjeta
+    let titulo = tarjeta.querySelector("h2");
+    // Obtenemos el nombre del animal de la tarjeta
+    let nombreAnimal = titulo.textContent;
+    //mostramos el mensaje 
+    alert("¡Le ha gustado: " + nombreAnimal + "!");
 }
 
