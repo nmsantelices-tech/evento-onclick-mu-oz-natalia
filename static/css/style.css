@@ -1,0 +1,153 @@
+/* -- Estilos generales -- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -- Estilos para el cuerpo -- */
+body {
+    /* Establece la fuente principal */
+    font-family: "Kedebideri", sans-serif;
+    /* Color de fondo de la página */
+    background-color: #DFC382;
+}
+
+/* -- Estilos para la barra de navegación -- */
+.navbar {
+    /* Establece el color de fondo */
+    background-color: #345773;
+}
+
+.nav-container {
+    /* Centra el contenedor horizontalmente */
+    margin: 0 auto;
+    /* Establece el padding */
+    padding: 20px 5%;
+    /* Flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container h1 {
+    /* Establece el color del título  */
+    color: #fff;
+    /* Establece el tamaño de fuente */
+    font-size: 30px;
+    /* Establece el espaciado entre letras */
+    letter-spacing: 3px;
+}
+
+.nav-container input {
+    /* Establece el padding del campo de búsqueda */
+    padding: 4px 5px;
+    /* Establece el tamaño de fuente del campo de búsqueda */
+    font-size: 14px;
+    /* Establece el ancho del campo de búsqueda */
+    width: 600px;
+}
+
+/* -- Estilos para el contenedor principal -- */
+.contenedor {
+    /* Establece el ancho del contenedor principal */
+    width: 90%;
+    /* Centra el contenedor principal horizontalmente */
+    margin: 40px auto;
+    /* Flexbox */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.columna1 {
+    /* Establece la proporción de la columna  */
+    flex: 2;
+}
+
+.columna2 {
+    /* Establece la proporción de la columna 2 */
+    flex: 1;
+}
+
+/* -- Estilos para las tarjetas -- */
+.tarjeta {
+    /* Establece el color de fondo de las tarjetas */
+    background-color: #e4ddce;
+    /* Establece el borde de las tarjetas */
+    border: 2px solid #000;
+    /* EStablecer el borde edondo de las tarjetas */
+    border-radius: 8px;
+    /* Establece el margen inferior de las tarjetas */
+    margin-bottom: 20px;
+    /* Establece el padding de las tarjetas */
+    padding: 30px;
+    height: 250px;
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.tarjeta h2 {
+    /* Margen inferior */
+    margin-bottom: 20px;
+}
+
+.tarjeta h3 {
+    /* Establecer tamaño y estilo de la fuente */
+    font-size: 15px;
+    font-style: italic;
+}
+
+.tarjeta p {
+    /* Establece el margen inferior y superior del párrafo de las tarjetas */
+    margin: 5px 0;
+}
+
+.tarjeta img {
+    /* establecer posición de las imagenes */
+    position: absolute;
+    left: 53%;
+    transform: translateY(-100px);
+    /* Establecer tamaño y borde de las imagenes */
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* -- Estilos para los botones -- */
+.btn1,
+.btn2 {
+    /* Establece el color de fondo de los botones */
+    background-color: #483E59;
+    /* Establece el color del texto de los botones */
+    color: #fff;
+    /* Establece el borde de los botones */
+    border: 2px solid #000;
+    border-radius: 5px;
+    /* Establece el padding de los botones */
+    padding: 5px 20px;
+}
+
+.btn1 {
+    width: 200px;
+}
+
+.columna2 {
+    /* Establece el color de fondo de las tarjetas */
+    background-color: #e4ddce;
+    /* Establece el borde de las tarjetas */
+    border: 2px solid #000;
+    /* EStablecer el borde edondo de las tarjetas */
+    border-radius: 8px;
+    /* Establece el margen inferior de las tarjetas */
+    margin-bottom: 20px;
+    /* Establece el padding de las tarjetas */
+    padding: 30px;
+    height: 150px;
+}
+
+.columna2 h2 {
+    margin-bottom: 30px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Autora del documento -->
+    <meta name="author" content="nmsantelices@gmail.com">
+    <meta name="description" content="Core Evento Onclick para aplicar Js">
+    <!-- Título del documento -->
+    <title>Evento onclick</title>
+    <!-- Fuente de texto de Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kedebideri:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Estilo CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <!-- Contenedor de la barra de navegación -->
+        <section class="nav-container">
+            <!-- Título de la barra de navegación -->
+            <h1>Petlopedia</h1>
+            <!-- Formulario de búsqueda, se deja action y method vacio ya que no tenemos donde y como enviar-->
+            <form action="" method="">
+                <!-- Campo de búsqueda -->
+                <input type="text" id="buscar" name="buscar" placeholder="Buscar mascotas">
+            </form>
+            <!-- Botón de iniciar sesión -->
+            <button class="btn2" id="nav-boton" onclick="cambiarTexto()">Iniciar sesión</button>
+        </section>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="contenedor">
+        <!-- Bloque columna 1 -->
+        <section class="columna1">
+            <!-- Tarjeta 1 -->
+            <div class="tarjeta">
+                <!-- imagen -->
+                <img src="static/images/gatoatigrado.jfif" alt="Gato Atigrado">
+                <!-- Título de la tarjeta 1 -->
+                <h2>Gato Atigrado</h2>
+                <!-- subtítulo -->
+                <h3>sustantivo</h3>
+                <!-- Párrafo de la tarjeta 1 -->
+                <p>Plural: Gato atigrados</p>
+                <p>Un gato con un pelaje distintivo rayas o patrones en remolino, usualmente con una marca en forma de
+                    "M" en su frente</p>
+                <!-- Botón me Gusta-->
+                <button class="btn1" onclick="darMeGusta(event)"><span id="numero1">0</span> Me gusta</button>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="tarjeta">
+                <!-- imagen -->
+                <img src="static/images/golden.jfif" alt="Golden Retriever">
+                <!-- Título de la tarjeta 2 -->
+                <h2>Golden Retriever</h2>
+                <!-- subtítulo -->
+                <h3>sustantivo</h3>
+                <!-- Párrafo de la tarjeta 2 -->
+                <p>Plural: Golden Retrievers</p>
+                <p>Una raza de perro aistoso, inteligente y devota, conocida por su pelaje dorado y su habilidad para
+                    recuperar objetos sin dañarlos</p>
+                <!-- Botón me Gusta-->
+                <button class="btn1" onclick="darMeGusta(event)"><span id="numero2">0</span> Me gusta</button>
+            </div>
+        </section>
+        <!-- Bloque columna 2-->
+        <section class="columna2">
+            <!-- Tarjeta 3 -->
+                <!-- Título de la tarjeta 3 -->
+                <h2>Peplopedia está definida por TI</h2>
+                <!-- Botón Agregar definición de la tarjeta 3 -->
+                <button class="btn2" onclick="eliminarBoton()" id="boton1">Agregar definición</button>
+        </section>
+    </main>
+    <!-- Script JS -->
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
